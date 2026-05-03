@@ -52,7 +52,7 @@ Architecture allows easy migration to:
 ---
 ### Project Structure
 ```
-TaskManager/
+SwiftTasker/
 ├── Models/
 ├── Services/
 ├── UI/
@@ -98,9 +98,10 @@ User → CLI Menu → Service Layer → JSON Storage → File System
 ```
 --- 
 ### Running the Project
-```
+
+```bash
 swift build
-swift run --skip-build`
+swift run --skip-build
 ```
 ---
 ### Design Decisions

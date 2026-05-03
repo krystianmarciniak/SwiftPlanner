@@ -1,0 +1,162 @@
+[
+  {
+    "category": "Nauka",
+    "description": "Zglebianie logiki",
+    "id": 1,
+    "isCompleted": false,
+    "priority": "Medium",
+    "title": "Nauka logiki"
+  },
+  {
+    "category": "Nauka",
+    "description": "Zglebienie problemu",
+    "id": 2,
+    "isCompleted": true,
+    "priority": "Medium",
+    "title": "Przeczytac ksiazke"
+  },
+  {
+    "category": "Relacje",
+    "description": "Wpisanie macierzy",
+    "id": 3,
+    "isCompleted": false,
+    "priority": "Medium",
+    "title": "Wprowadzenie zadan do zeszytu"
+  },
+  {
+    "category": "Praca",
+    "description": "Mierzenie blatu",
+    "id": 4,
+    "isCompleted": false,
+    "priority": "Medium",
+    "title": "Naprawa stolu"
+  },
+  {
+    "category": "Zakupy",
+    "description": "Sprawdzanie gwarancji",
+    "id": 5,
+    "isCompleted": false,
+    "priority": "Low",
+    "title": "Sortowanie dokumetow"
+  },
+  {
+    "category": "Prywatne",
+    "description": "Malowanie scian",
+    "id": 6,
+    "isCompleted": false,
+    "priority": "Medium",
+    "title": "Remont domu"
+  },
+  {
+    "category": "Prywatne",
+    "description": "Ukladanie naczyn",
+    "id": 7,
+    "isCompleted": false,
+    "priority": "Medium",
+    "title": "Sprzatanie kuchni"
+  },
+  {
+    "category": "Zakupy",
+    "description": "Fraba biala dokupienie",
+    "id": 8,
+    "isCompleted": false,
+    "priority": "Low",
+    "title": "Farba brak"
+  },
+  {
+    "category": "Prywatne",
+    "description": "P��ki lakierowanie",
+    "id": 9,
+    "isCompleted": false,
+    "priority": "Medium",
+    "title": "Meble remont"
+  },
+  {
+    "category": "Nauka",
+    "description": "Gramatyka cwiczenia",
+    "id": 10,
+    "isCompleted": false,
+    "priority": "High",
+    "title": "Nauka angielskiego"
+  },
+  {
+    "category": "Nauka",
+    "description": "Konwersacja cwiczenia",
+    "id": 11,
+    "isCompleted": false,
+    "priority": "Medium",
+    "title": "Niemiecki nauka"
+  },
+  {
+    "category": "Prywatne",
+    "description": "Zeby higena",
+    "id": 12,
+    "isCompleted": false,
+    "priority": "High",
+    "title": "Stomatolog wizyta"
+  },
+  {
+    "category": "Prywatne",
+    "description": "Szyja prostowniki",
+    "id": 13,
+    "isCompleted": false,
+    "priority": "High",
+    "title": "Kregoslup rozciaganie"
+  },
+  {
+    "category": "Nauka",
+    "description": "Utworzenie bazy danych",
+    "id": 14,
+    "isCompleted": false,
+    "priority": "High",
+    "title": "Projekt JavaScript"
+  },
+  {
+    "category": "Inne",
+    "description": "Oczyszczanie starych rzeczy",
+    "id": 15,
+    "isCompleted": false,
+    "priority": "Low",
+    "title": "Segrowanie makulatury"
+  },
+  {
+    "category": "Inne",
+    "description": "Kompletowanie dokumentow do neurologa",
+    "id": 16,
+    "isCompleted": false,
+    "priority": "High",
+    "title": "Przygotowanie dokumentow"
+  },
+  {
+    "category": "Inne",
+    "description": "Serwis Junkers",
+    "id": 17,
+    "isCompleted": false,
+    "priority": "Medium",
+    "title": "Przeglad techniczny"
+  },
+  {
+    "category": "Inne",
+    "description": "Doladowanie peka",
+    "id": 18,
+    "isCompleted": false,
+    "priority": "Low",
+    "title": "Zakup biletu"
+  },
+  {
+    "category": "Inne",
+    "description": "Odbior paczki",
+    "id": 19,
+    "isCompleted": false,
+    "priority": "Low",
+    "title": "Zamowienie paczkomat"
+  },
+  {
+    "category": "Nauka",
+    "description": "Trello modyfikacje",
+    "id": 20,
+    "isCompleted": false,
+    "priority": "High",
+    "title": "Poprawa projektu"
+  }
+]

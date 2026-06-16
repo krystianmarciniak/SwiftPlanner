@@ -1,14 +1,36 @@
 import Foundation
 
+// Utworzenie obiektu klasy TaskManager.
+// Konstruktor init() zostanie wykonany automatycznie,
+// a wraz z nim m.in. wczytanie zapisanych zadań z pliku JSON.
 let manager = TaskManager()
+
+// Flaga sterująca działaniem programu.
+// Dopóki ma wartość true, menu będzie wyświetlane w pętli.
 var isRunning = true
 
+// Główna pętla programu.
+// Program działa tak długo, jak długo isRunning == true.
 while isRunning {
+
+    // Pobranie aktualnych statystyk zadań
+    // (np. liczba wykonanych i wszystkich zadań)
     let stats = manager.getStats()
+
+    // Wyświetlenie menu głównego wraz ze statystykami
     showMenu(completed: stats.completed, total: stats.total)
     
+    // Odczyt danych wpisanych przez użytkownika.
+    // readLine() zwraca tekst (String?).
+    // Int(input) próbuje zamienić tekst na liczbę całkowitą.
     guard let input = readLine(), let option = Int(input) else {
+
+        // Jeżeli użytkownik podał niepoprawne dane,
+        // wyświetlany jest komunikat błędu.
         print("\(CLIColor.red)❌ Nieprawidłowy wybór.\(CLIColor.reset)")
+
+        // continue przerywa aktualną iterację pętli
+        // i wraca do początku menu.
         continue
     }
 
@@ -20,7 +42,6 @@ case 1:
         switch taskViewOption {
         case 1:
             manager.showAllTasks()
-
         case 2:
             print("Podaj ID zadania:")
             if let input = readLine(), let id = Int(input) {
@@ -28,13 +49,10 @@ case 1:
             } else {
                 print("\(CLIColor.red)❌ Nieprawidłowe ID.\(CLIColor.reset)")
             }
-
         case 3:
             manager.showCompletedTasks()
-
         case 4:
             manager.showIncompleteTasks()
-
         case 5:
             print("Podaj ID zadania:")
             if let input = readLine(), let id = Int(input) {
@@ -42,7 +60,6 @@ case 1:
             } else {
                 print("\(CLIColor.red)❌ Nieprawidłowe ID.\(CLIColor.reset)")
             }
-
         case 6:
             showSortMenu()
 
@@ -64,10 +81,8 @@ case 1:
             print("Podaj kategorię: 1. Nauka || Praca || Prywatne || Zakupy || Inne")
             let category = readLine() ?? ""
             manager.filterByCategory(category)
-
         case 0:
             print("↩️ Powrót do menu głównego.")
-
         default:
             print("\(CLIColor.red)❌ Nieprawidłowa opcja.\(CLIColor.reset)")
         }
@@ -161,25 +176,8 @@ case 4:
         print("\(CLIColor.red)❌ Nieprawidłowe ID.\(CLIColor.reset)")
     }
 case 5:
-    showSortMenu()
+    manager.showStatistics()
 
-    if let input = readLine(), let sortOption = Int(input) {
-        switch sortOption {
-        case 1:
-            manager.showTasksSortedByTitle()
-        case 2:
-            manager.showTasksSortedByCategory()
-        case 3:
-            manager.showTasksSortedByStatus()
-        case 0:
-            print("↩️ Powrót do menu głównego.")
-        default:
-            print("\(CLIColor.red)❌ Nieprawidłowa opcja sortowania.\(CLIColor.reset)")            
-        }
-    } else {
-        print("\(CLIColor.red)❌ Nieprawidłowy wybór.\(CLIColor.reset)")
-    }   
-     
 case 0:
     print("\(CLIColor.green)👋 Zamykanie programu...\(CLIColor.reset)")
     isRunning = false

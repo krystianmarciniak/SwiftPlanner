@@ -55,28 +55,18 @@ func selectCategory() -> String {
     """)
 
     guard let input = readLine(), let option = Int(input) else {
-        return "Inne"
-    }
-
+        return "Inne"}
     switch option {
-    case 1:
-        return "Nauka"
-    case 2:
-        return "Praca"
-    case 3:
-        return "Prywatne"
-    case 4:
-        return "Zakupy"
-    case 5:
-        return "Inne"
-    case 0:
-        print("Podaj własną kategorię:")
+    case 1: return "Nauka"
+    case 2: return "Praca"
+    case 3: return "Prywatne"
+    case 4: return "Zakupy"
+    case 5: return "Inne"
+    case 0: print("Podaj własną kategorię:")
         return readLine() ?? "Inne"
-    default:
-        return "Inne"
-    }
-}
-
+    default: return "Inne"
+    }}
+    
 func showSortMenu() {
     print("""
     ------------------------------
@@ -88,5 +78,4 @@ func showSortMenu() {
     0. Powrót
     ------------------------------
     Wybierz opcję:
-    """)
-}
+    """)}

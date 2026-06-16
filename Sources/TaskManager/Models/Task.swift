@@ -5,7 +5,6 @@ enum Priority: String, Codable {
     case medium = "Medium"
     case high = "High"
 }
-
 struct Task: Codable {
     let id: Int
     var title: String

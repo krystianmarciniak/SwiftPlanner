@@ -51,7 +51,7 @@
     "category" : "Prywatne",
     "description" : "Ukladanie naczyn",
     "id" : 7,
-    "isCompleted" : true,
+    "isCompleted" : false,
     "priority" : "Medium",
     "title" : "Sprzatanie kuchni"
   },
@@ -166,5 +166,21 @@
     "isCompleted" : false,
     "priority" : "High",
     "title" : "Demo task"
+  },
+  {
+    "category" : "Inne",
+    "description" : "Wprowadzanie grafiki",
+    "id" : 22,
+    "isCompleted" : false,
+    "priority" : "Low",
+    "title" : "Modernizacja"
+  },
+  {
+    "category" : "Nauka",
+    "description" : "Przygotowanie projektu zaliczeniowego",
+    "id" : 23,
+    "isCompleted" : false,
+    "priority" : "High",
+    "title" : "Nauka Swift"
   }
 ]

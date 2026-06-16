@@ -2,7 +2,7 @@
 
 Lightweight, modular **task management system built in Swift**, designed with clean architecture and persistent storage.
 
->  Not just a CLI app - a foundation for scalable task management systems.
+> Not just a CLI app - a foundation for scalable task management systems.
 
 ---
 ## Example UI (CLI)
@@ -67,6 +67,21 @@ SwiftTasker/
 | Build | Swift Package Manager | 
 | Storage | JSON | 
 | Interface | CLI | 
+--- 
+## Swift Concepts Used
+
+- Structs
+- Enums
+- Optionals
+- Guard Statements
+- Closures
+- Higher-Order Functions:
+  - filter()
+  - sorted()
+  - map()
+- JSONEncoder / JSONDecoder
+- Error Handling (do-catch)
+- FileManager
 ---
 ### Example Workflow
 ```
